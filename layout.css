@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('assets/headers/front.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.box-container {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-content {
+    background-color: aliceblue;
+    margin: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.box-content h1, p {
+    margin: 10px 0;
+}
+
+.header.front {
+    background-image: url('assets/headers/front.jpg');
+}
+
+.header.products {
+    background-image: url('assets/headers/products.jpg');
+}
+
+.header.health {
+    background-image: url('assets/headers/abouthealth.jpg');
+}
+
+.header.subscribers {
+    background-image: url('assets/headers/subscribers.jpg');
+}
+
+.header.front .box-content {
+    background-color: red;
+}
+
+.header.products .box-content {
+    background-color: blue;
+}
+
+.header.health .box-content {
+    background-color: green;
+}
+
+.header.subscribers .box-content {
+    background-color: purple;
+}
+
+.navigation {
+    background-color: #fff;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .box-content {
+        margin: 0 30px;
+    }
+
+}
